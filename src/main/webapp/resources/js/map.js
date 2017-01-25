@@ -37,7 +37,7 @@ function getMapInfo () {
 	document.getElementById("itemMap").style.backgroundImage = "";
     jQuery.ajax({
         type: "GET",
-        url: "http://naocheguei-srv.herokuapp.com/rest/map/trip/"+$.QueryString["trip"], //depois mudar hostname para ser dinâmico
+        url: "https://naocheguei-srv.herokuapp.com/rest/map/trip/"+$.QueryString["trip"]+"?finished=true", //depois mudar hostname para ser dinâmico
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         crossDomain:true,
